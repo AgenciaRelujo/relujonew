@@ -1,0 +1,692 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-size: cover;
+}
+
+header{
+    width: 100%;
+    height: 80px;
+}
+
+#barraNav{
+    width: 100%;
+    line-height: 80px;
+    text-align: center;
+}
+
+#logoNav{
+    margin-left: 30px;
+}
+
+#logo{
+    width: 70px;
+    height: 60px;
+}
+
+#linksNav{
+    margin-left: 100px;
+}
+
+.nav-item{
+    margin-left: 45px;
+    margin-right: 45px;
+}
+
+.nav-link{
+    height: 45px;
+    line-height: 45px;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    transition: all 300ms;
+}
+
+#nav-link-regular:hover{
+    font-size: 32px;
+    letter-spacing: 1.7px;
+}
+
+#nav-link-contact{
+    height: 45px;
+    line-height: 45px;
+    padding: 0px;
+    position: relative;
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+}
+
+#nav-link-contact::after{
+    position: absolute;
+    content: "CONTACTANOS";
+    background-color: white;
+    border-radius: 15px;
+    color: black;
+    line-height: 45px;
+    height: 45px;
+    width: 100%;
+    left: -100%;
+    transition: 500ms;
+}
+
+#nav-link-contact:hover::after{
+    position: absolute;
+    left: 0;
+}
+
+.moonBg{
+    width: 100%;
+    height: 500px; 
+    margin-top: 20px;
+    background-image: url("../Assets/lunaCasiLlena.jpg");
+    background-size: 100%;
+    background-position: -670px;
+    background-repeat: repeat-x;
+    background-attachment:fixed;
+    animation: movementMoon 3s linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes movementMoon{
+    0%{
+        background-position: -670px;
+    }
+    20%{
+        background-position: -536px;   
+    }
+    40%{
+        background-position: -402px;
+    }
+    60%{
+        background-position: -268px;
+    }
+    80%{
+        background-position: -134px;
+    }
+    100%{
+        background-position: 0px;
+    }
+}
+
+.phrase1{
+    position: relative;
+    color: white;
+    font-size: 50px;
+    font-family:'Montserrat', sans-serif;
+    margin-left: 100px;
+    top: 100px;
+    animation: movementPhraseOne 3s linear forwards;
+}
+
+@keyframes movementPhraseOne {
+    0%{
+        transform: translateY(-250%);
+        filter: opacity(0);
+    }
+    20%{
+        transform: translateY(-160%);
+        filter: opacity(0.2);
+    }
+    40%{
+        transform: translateY(-120%);
+        filter: opacity(50%);
+    }
+    60%{
+        transform: translateY(-80%);
+        filter: opacity(80%);
+    }
+    80%{
+        transform: translateY(-40%);
+        filter: opacity(1);
+    }
+    100%{
+        transform: translateY(0%);
+        filter: opacity(1);
+    }
+}
+
+.phrase2{
+    position: relative;
+    color: white;
+    font-size: 50px;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 950px;
+    top: 250px;
+    animation: movementPhraseTwo 3s linear forwards;
+}
+
+@keyframes movementPhraseTwo {
+    0%{
+        transform: translateY(250%);
+        filter: opacity(0);
+    }
+    20%{
+        transform: translateY(160%);
+        filter: opacity(0.2);
+    }
+    40%{
+        transform: translateY(120%);
+        filter: opacity(50%);
+    }
+    60%{
+        transform: translateY(80%);
+        filter: opacity(80%);
+    }
+    80%{
+        transform: translateY(40%);
+        filter: opacity(1);
+    }
+    100%{
+        transform: translateY(0%);
+        filter: opacity(1);
+    }
+}
+
+.enfoqueBg{
+    width: 100%;
+    height: 1000px;
+    background-image: url("../Assets/backk.jpg");
+    background-size: 100%;
+}
+
+.backgroundTwoPt1{
+    position: relative;
+    width: 250px;
+    height: 65px;
+    margin-left: 500px;
+    top: 450px;
+}
+
+.backgroundTwoPt1 h4{
+    font-size: 60px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    letter-spacing: -2px;
+}
+
+.divOne{
+    position: relative;
+    top: 50px;
+    right: 243px;
+    width: 230px;
+    height: 20px;
+    border-top: 8px solid black;
+}
+
+.backgroundTwoPt2{
+    position: relative;
+    width: 300px;
+    height: 90px;
+    margin-left: 498px;
+    top: 428px;
+}
+
+.backgroundTwoPt2 h4{
+    font-size: 85px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    letter-spacing: -2px;
+}
+
+.divTwo{
+    position: relative;
+    top: 55px;
+    left: 440px;
+    width: 530px;
+    height: 20px;
+    border-bottom: 8px solid black;
+}
+
+.parrafo{
+    position: relative;
+    width: 730px;
+    height: auto;
+    top: 990px;
+    left: 748px;
+    justify-content: center;
+    align-items: center;
+}
+
+.parrafo p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+}
+
+.buttonOne{
+    position: relative;
+    width: 220px;
+    height: 50px;
+    top: 1000px;
+    left: 1050px;
+    background-color: black;
+    color: gray;
+    border: none;
+    /*border-radius: 10px;*/
+    overflow: hidden;
+    font-family: 'Montserrat', sans-serif;
+    transition: 300ms;
+}
+
+.buttonOne:hover{
+    color: white;
+}
+
+.buttonOne span{
+    position: absolute;
+    background: white;
+    transition: 300ms;
+}
+
+.buttonOne span:nth-child(1){
+    width: 100%;
+    height: 5px;
+    top: 0;
+    left: -100%;
+}
+
+.buttonOne span:nth-child(2){
+    width: 100%;
+    height: 5px;
+    bottom: 0;
+    right: -100%;
+}
+
+.buttonOne span:nth-child(3){
+    width: 5px;
+    height: 100%;
+    bottom: -100%;
+    left: 0;
+}
+
+.buttonOne span:nth-child(4){
+    width: 5px;
+    height: 100%;
+    top: -100%;
+    right:  0;
+}
+
+.buttonOne:hover span:nth-child(1){
+    left: 0;
+}
+
+.buttonOne:hover span:nth-child(2){
+    right: 0;
+}
+
+.buttonOne:hover span:nth-child(3){
+    bottom: 0;
+}
+
+.buttonOne:hover span:nth-child(4){
+    top: 0;
+}
+/*
+.buttonOne::after{
+    position: absolute;
+    content: "¿Como lo hacemos?";
+    background-color: #eaebed;
+    border-radius: 10px;
+    color: black;
+    width: 100%;
+    left: -100%;
+    transition: 500ms;
+}
+
+.buttonOne:hover::after{
+    position: absolute;
+    left: 0;
+}*/
+
+/* INICIO ESTILOS CARDS*/
+.logo{
+    width: 140px;
+    display: inline;
+    position: absolute;
+    margin-left: 0;
+    margin-right: 0;
+    top: -100px;
+    right: 95px;
+}
+
+.logoGoogle{
+    width: 100px;
+    display: inline;
+    position: absolute;
+    margin-left: 0;
+    margin-right: 0;
+    top: -70px;
+    right: 115px;
+}
+.card{
+    width: 22rem;
+    top: 100px;
+    height: 250px;
+    margin: auto;
+    position: relative;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+.section{
+    margin-top: 0px;
+    height: 450px;
+    background-color: black;
+
+}
+
+.sectionUno{
+    background-image: url("./assets/background.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.sectionDos{
+    height: 450px;
+    background-color: black;
+}
+
+#cardSectionTwo{
+    margin-top: 30px;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('Montserrat-VariableFont_wght.ttf');
+}
+
+p{
+  font-family: Montserrat;   
+  font-weight: lighter;
+}
+
+.h3Cards{
+    color: white;
+    font-family: 'Montserrat';
+    size: 20px;
+    text-align: center;
+    margin: 30px;
+    font-weight: bolder;
+    font-size: xx-large;
+}
+
+.h4Cards{
+    font-size: large;
+    top: 30px;
+    font-weight: bolder;
+    color: white;
+    font-family: 'Montserrat';
+    size: 13px;
+    text-align: center;
+}
+
+h5{
+    font-family: 'Montserrat';
+    font-weight: bold;
+}
+
+
+.text-card{
+    text-align: center;
+    font-size:x-small;
+}
+
+.btn-negro{
+    font-family: 'Montserrat';
+    font-weight: bold;
+    text-align: center;
+    background-color: black;
+    border-radius: 35px;
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    display: inline-block;
+    color: white;
+    padding: 5px 25px;
+    display: inline-block;
+}
+
+
+.btn-negro:hover{
+    font-family: 'Montserrat';
+    font-weight: bold;
+    text-align: center;
+    border-color: black;
+    background-color: rgb(0, 0, 0);
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    display: inline-block;
+}
+
+.btn-negro::after{
+    content: "";
+    border-radius: 35px;
+    background: #ffffff; /* color de fondo hover */
+    position: absolute;
+    z-index: -1;
+    /* padding: 16px 20px; */
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: -100%;
+    right: 100%;
+    -webkit-transition: all 0.01s;
+    transition: all 0.90s;
+}
+
+.btn-negro:hover::after{
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    -webkit-transition: all 0.01s;
+    transition: all 0.90s;
+}
+
+.cardsRow1{
+    padding: 0px;
+}
+
+.card.cardGoogle{
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.card.cardAds{
+    margin-left: 40px;
+    margin-right: 40px;
+    top: 117px;
+}
+
+#cardSectionOne-Lc{
+    margin-left: 40px;
+    margin-right: 40px;
+    left: 864px;
+    top: -147px;
+}
+
+#cardSectionTwo-Lc{
+    top: 115px;
+}
+
+#cardSectionTwo{
+    margin-top: 60px;
+}
+
+#cardSectionTwo-Lc{
+    margin-top: 45px;
+}
+
+/*INICIO FOOTER*/
+
+p{
+    font-family: 'Montserrat', sans-serif;
+}
+
+#content{
+    font-family: 'Montserrat', sans-serif;
+}
+
+footer{
+    font-family: 'Montserrat', sans-serif;
+}
+
+#cel{
+    margin-left: 50px;
+}
+
+:root{
+    --facebook: #3b5998;
+    --instagram: #E1306C;
+    --tiktok: black;
+}
+
+.redes{
+    display: flex;
+    border-bottom: 1px solid black;
+    height: 200px;
+    width: 400px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 200px;
+}
+.redes nav ul li{
+    display: inline-block;
+    height: 50px;
+    margin-bottom: 5px;
+    width: 300px;
+    height: 50px;   
+    text-align: center;
+}
+
+.redes nav ul li a{
+    display: block;
+    padding: 0;
+    margin: 10px;
+    background: black;
+    color: white;
+    line-height: 50px;
+    font-size: 18px;
+    box-shadow: 0 3px 5px 0px rgba(0, 0, 0, .2);
+    transition: .2s;
+}
+
+.redes ul:hover a{
+    filter: blur(2px);
+}
+
+.redes ul li a:hover{
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 5px 5px 0px rgba(0, 0, 0, .4);
+    filter: none;
+}
+
+.redes ul li .facebook:hover{
+    background: var(--facebook);
+}
+
+.redes ul li .instagram:hover{
+    background: var(--instagram);
+}
+
+.redes ul li .tiktok:hover{
+    background: var(--tiktok);
+}
+
+#content{
+    margin-top: 50px;
+    text-align: center;
+    border-bottom: 1px solid black;
+    height: 500px;
+}
+
+.article{
+    height: 100px;
+    text-align: center;
+}
+
+.article h2{
+    margin-top: 50px;
+    font-size: x-large;
+    background: black;
+    color:white;
+}
+
+.article p{
+    margin-top: 20px;
+    font-size: x-large;
+    font-weight: 500;
+}
+
+.container_box{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.container_box h3{
+    margin-top: 50px;
+}
+
+.container_box p{
+    margin-top: 20px;
+}
+
+.socialMedialink{
+    padding-left: 0px !important;
+}
+
+.botton{
+    height: 48px;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.botton_txt{
+    margin: 0px auto;
+    line-height: 50px;
+}
+
+.botton_txt > p{
+    line-height: 48px;
+    margin: 0px;
+}
+
+.botton a{
+    margin-left: 5px;
+    margin-right: 5px;
+    line-height: 50px;
+    color: black;
+    font-size: x-large;
+}
+
+.clearfix{
+    clear:both;
+}
+
+#pstyle{
+    font-weight: bold;
+    font-size: 18.72px;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.containerM{
+    width: 100%;
+}
